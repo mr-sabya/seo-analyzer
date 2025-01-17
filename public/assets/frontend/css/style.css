@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --primary-color: #f39c12;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -44,6 +49,23 @@ p{
     margin-bottom: 20px;
 }
 
+.button{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    outline: none;
+    border: none;
+}
+
+.button:hover{
+    background: #e67e22;
+}
+
 /* navbar start */
 .main-menu {
     background: #111317;
@@ -73,7 +95,7 @@ p{
 }
 
 .navbar .logo span {
-    color: #f39c12;
+    color: var(--primary-color);
 }
 
 .menu {
@@ -211,7 +233,7 @@ p{
 }
 
 .banner .search button{
-    background: #f39c12;
+    background: var(--primary-color);
     color: #fff;
     border: none;
     padding: 20px 20px;
@@ -229,3 +251,80 @@ p{
 
 
 /* hero section end */
+
+/* service section start */
+
+.service-section{
+    margin-top: -100px;
+}
+
+.service-section .nav .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    padding: 10px 10px;
+    color: #111317;
+}
+
+
+.service-section .nav .nav-link img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-section .nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+}
+
+.service-section .nav .nav-link {
+    border: none;
+    border-bottom: 3px solid #c2c2c2;
+}
+
+.service-section .nav .nav-link.active {
+    border-color: var(--primary-color);
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    padding: 40px;
+}
+
+.feature-box .tab-pane {
+    padding-top: 40px;
+}
+
+.feature-box .feature-title{
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.feature-box .features-item{
+    margin-bottom: 30px;
+}
+
+.feature-box .features-item li{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: block;
+}
+.feature-box .features-item li::before{
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+/* service section end */

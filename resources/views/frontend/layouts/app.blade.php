@@ -8,6 +8,7 @@
 
 
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="{{ asset('assets/frontend/vendor/fontawesome/css/all.min.css')}}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/style.css') }}" rel="stylesheet">
     @livewireStyles
